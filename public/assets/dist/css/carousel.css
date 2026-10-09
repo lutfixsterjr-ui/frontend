@@ -1,0 +1,192 @@
+/* ===========================
+   GLOBAL STYLES
+   =========================== */
+   body {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: #f8f9fa; /* teks terang agar kontras */
+    background-color: #2c2c2c;
+  }
+  
+  /* ===========================
+     NAVBAR
+     =========================== */
+  .navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* semi transparan */
+    z-index: 10;
+    border-bottom: 2px solid #fff; /* garis bawah putih */
+  }
+  
+  .navbar .nav-link,
+  .navbar .navbar-brand {
+    color: #fff;
+  }
+  
+  .navbar-brand {
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  
+  /* ===========================
+     CAROUSEL FULLSCREEN
+     =========================== */
+  .carousel {
+    margin-bottom: 0;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .carousel-item {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+  
+  .carousel-item > img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+  }
+  
+  .carousel-caption h1,
+  .carousel-caption h2,
+  .carousel-caption p {
+    color: #fff;
+    text-shadow: 0 0 10px rgba(0,0,0,0.7);
+  }
+  
+  .carousel-caption .btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+    border-radius: 0.3rem;
+  }
+  
+  /* Custom highlight untuk branding */
+  .carousel-caption .bmw-small {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+  }
+  
+  .carousel-caption .ix-highlight {
+    font-size: 5rem;
+    font-weight: 800;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-shadow: 0 3px 6px rgba(0,0,0,0.7);
+  }
+  
+  /* ===========================
+     KARTU PRODUK
+     =========================== */
+  .card-img-top {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .card-img-top:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  }
+  
+  .card-body {
+    background-color: #ffffff;
+    border-top: 1px solid #eee;
+  }
+  
+  .card-title {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  .card-text {
+    font-size: 0.95rem;
+    color: #6c757d;
+  }
+  
+  .card img {
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  /* ===========================
+     FEATURETTE
+     =========================== */
+  .featurette-divider {
+    margin: 5rem 0;
+  }
+  
+  .featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -.05rem;
+  }
+  
+  .featurette-image {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+  }
+  
+  /* ===========================
+     RESPONSIVE FALLBACK
+     =========================== */
+  @media (max-width: 768px) {
+    .ix-highlight {
+      font-size: 2.5rem;
+    }
+    .carousel-caption p {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (min-width: 40em) {
+    .carousel-caption p {
+      margin-bottom: 1.25rem;
+      font-size: 1.25rem;
+      line-height: 1.4;
+    }
+    .featurette-heading {
+      font-size: 50px;
+    }
+  }
+  
+  @media (min-width: 62em) {
+    .featurette-heading {
+      margin-top: 7rem;
+    }
+  }
+  
+  /* ===========================
+     BUTTONS (BMW BLUE THEME)
+     =========================== */
+  .btn-primary {
+    background-color: #1c69d4;
+    border-color: #1c69d4;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004a9c;
+  }
